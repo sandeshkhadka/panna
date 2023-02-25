@@ -46,6 +46,10 @@ body{
     padding: 5px;
     cursor: pointer;
 }
+.btn:hover{
+    background-color: #DCCBCB;
+    color: #514D4D;
+}
 .clicked{
     background-color: #7FB1EC;
     border-color: #7FB1EC;
@@ -86,11 +90,23 @@ body{
     cursor: default;
 }
 .color-indicator{
+    appearance: none;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: black;
     cursor: pointer;
+}
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
 }
 .board-container{
     flex: 1 1 auto;
@@ -107,11 +123,15 @@ body{
     overflow: hidden;
 }
 .pixel{
-    width: 10px;
-    height: 10px;
-    border: 1px solid #EAA8A8;
+    --size: 5px;
+    width: var(--size);
+    height: var(--size);
+    /* border: 1px solid #EAA8A8; */
     background-color: white;
     cursor: pointer;
+}
+.hidden {
+    display: none;
 }
 
 
