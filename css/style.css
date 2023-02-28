@@ -123,17 +123,31 @@ input[type=color]::-webkit-color-swatch-wrapper {
     overflow: hidden;
 }
 .pixel{
-    --size: 5px;
+    --size: 10px;
     width: var(--size);
     height: var(--size);
-    /* border: 1px solid #EAA8A8; */
+    border: 1px solid #EAA8A8;
     background-color: white;
     cursor: pointer;
 }
 .hidden {
     display: none;
 }
-
+.size-controler div{
+    width: 100px;
+}
+.size-wrapper {
+    display: flex;
+    gap: 10px;
+}
+.size-controler{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid black;
+}
 
 
 

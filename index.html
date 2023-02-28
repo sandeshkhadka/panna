@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Panna</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+
+<title>Panna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,17 +24,25 @@
                 </li>
                 <li>
                     <div class="color-picker btn">
-                         Color
-                         <input class = 'color-indicator' type="color"></input>
+                        Color
+                        <input class='color-indicator' type="color"></input>
                         <!-- <div class='color-indicator'></div> -->
                     </div>
                 </li>
                 <li>
                     <div class='btn size '>
-                        <input type="range" class='slider'></input>
+                        <input type="range" min="10" max="100" value="50" class='slider'></input>
                         Pen Size
                     </div>
                 </li>
+                <!-- <li class="size-controler"> -->
+                <!--     <div>Size</div> -->
+                <!--     <div class = "size-wrapper"> -->
+                <!--         <div class='small btn'>Small</div> -->
+                <!--         <div class='medium btn'>Medium</div> -->
+                <!--         <div class='large btn'>Large</div> -->
+                <!--     </div> -->
+                <!-- </li> -->
             </ul>
         </div>
         <div class='board-container'>
@@ -42,7 +50,7 @@
             </div>
         </div>
     </div>
-    <div class = 'pixel hidden'></div>
+    <div class='pixel hidden'></div>
     <script src="js/script.js"></script>
 </body>
 
