@@ -27,9 +27,9 @@ function createGrid(size) {
     }
 }
 
-function resetGrid() {
+function resetGrid(size = pixelSize) {
     board.innerHTML = "";
-    createGrid(pixelSize);
+    createGrid(size);
 }
 
 function draw(e) {
